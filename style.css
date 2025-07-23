@@ -1,0 +1,246 @@
+.class1 {
+  background-color: blue;
+}
+/* class="class1" */
+/* class="class1 class2" 同時有class1和class2兩個class */
+
+#id2 {
+  background-color: lightgreen;
+}
+/* id="id2" */
+
+body {
+  background-color: aqua;
+}
+
+* {
+  font-size: 1rem;
+}
+
+/* * 萬用選擇器 */
+
+.red-text,
+.red {
+  color: red;
+}
+/* .class , .class   , = and 其一class正確就有 */
+
+.blue .blue-text {
+  color: blue;
+}
+/* .class .class    = or 兩者class正確才有 */
+
+.green.green-text {
+  color: green;
+}
+
+/* !important > id > class */
+/* !important 加在 css ， id、class 設在 html*/
+.rainbow-linear-gradient {
+  background: linear-gradient(to right, red, blue, green, yellow);
+}
+
+.btn {
+  background: #00eeff;
+  /* 背景顏色 */
+  background-image: url(./貓1.jpg);
+  /* 背景圖片 */
+  background-size: contain;
+  /* 圖片尺寸長或寬符合容器 */
+  background-repeat: no-repeat;
+  /* 圖片重複 不重複 */
+  background-position: center;
+  /* 圖片置中 */
+  /* 可以放在同一行變成 background: url(./貓1.jpg) no-repeat center; */
+
+  text-align: center;
+  /* 文字水平置中 */
+  vertical-align: middle;
+  /* 文字垂直置中 */
+  /* padding: 10px 10px 10px 10px; */
+  /* 內距 上 右 下 左 */
+  margin: 15px;
+  /* 外距 */
+  border-radius: 50%;
+  /* 圓角 */
+  font-weight: 700;
+  /* 字體粗細 一般=400 bold=700 */
+  color: azure;
+  /* 文字顏色 */
+  line-height: 100px;
+  /* 行高 */
+  width: 100px;
+  /* 寬度 */
+  height: 100px;
+  /* 高度 */
+  box-shadow: 2px 2px 2px 2px gray;
+  /* 陰影 */
+  border: 1px solid blue;
+  /* 邊框 粗細 實線 顏色 */
+}
+/* 按鈕長度=高度 圓角設50% →按鈕圓形 */
+
+.btn:hover {
+  /* 滑鼠滑進去時的效果 */
+  background: blue url(./貓2.jpg) no-repeat center;
+  background-size: contain;
+  /* 圖片尺寸長或寬符合容器 */
+  border: 15px solid rgb(170, 245, 255);
+  /* 邊框 粗細 實線 顏色 */
+  text-align: center;
+  /* 文字水平置中 */
+  vertical-align: middle;
+  /* 文字垂直置中 */
+
+  border-radius: 50%;
+  /* 圓角 */
+  font-weight: 700;
+  /* 字體粗細 一般=400 bold=700 */
+  color: azure;
+  /* 文字顏色 */
+  line-height: 100px;
+  /* 行高 */
+  width: 100px;
+  /* 寬度 */
+  height: 100px;
+  /* 高度 */
+}
+
+.btn:active： {
+  background: rgb(0, 0, 115);
+}
+
+.massage {
+  padding: 5px 10px;
+  border: #0800ff solid 1px;
+  border-radius: 10px;
+  background-color: #85dcff;
+  color: #ffffff;
+
+  :inline-block ;
+  /* position: static; */
+  /* 預設 依照html排列 */
+  /* position: absolute; */
+  /* 絕對定位 */
+  /* position: relative; */
+  /* 相對位置 依照原本位置微調 */
+  position: fixed;
+  /* 固定定位 定位在離邊框的...距離 */
+  /* position: sticky */
+  /* 混合 relative 和 fixed */
+  /* 一開始跟著正常流動，滑到某個位置後會固定 */
+  bottom: 10px;
+  /* 距離底部邊框 */
+  right: 10px;
+  /* 距離右側邊框 */
+}
+
+.box1 {
+  display: inline-block;
+  /* 可以並排，但也能設定寬高 */
+  /* display: inline; */
+  /* 像文字一樣可以排在同一行 */
+  /* display: block; */
+  /* 可以設定寬高 內距 外距 */
+  /* display: inline-block;  */
+  /* inline + block */
+  width: 100px;
+  height: 100px;
+  background-color: rgb(30, 0, 155);
+  margin: 10px; /* 外距，讓元素之間有空隙 */
+  text-align: center; /* 文字水平置中 */
+  line-height: 100px; /* 文字行高 */
+  font-family: Arial, Helvetica, sans-serif;
+  /* 字體選擇 */
+  border-radius: 10px; /*圓角*/
+  font-weight: bold;
+  overflow: auto;
+  /*  overflow 當內容超出容器時的處理方式 */
+  /* overflow: visible; 預設 溢出來的內容會照樣顯示出來 不會被擋 */
+  /* overflow: auto; 自動判斷 溢出才會出現捲軸 */
+  /* overflow: hidden; 超出容器部分隱藏 */
+  /* overflow: scroll; 固定出現卷軸 */
+}
+
+.box2 {
+  background-color: rgb(0, 255, 5);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px; /*圓角*/
+  margin: 10px; /* 外距，讓元素之間有空隙 */
+  text-align: center; /* 文字水平置中 */
+  line-height: 100px;
+}
+
+.box2:hover {
+  background-color: rgb(0, 255, 8);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px; /*圓角*/
+  margin: 10px; /* 外距，讓元素之間有空隙 */
+  text-align: center; /* 文字水平置中 */
+  line-height: 100px;
+
+  transition: transform 3s ease;
+  /* 變化 3秒後會變成*/
+  /* ease 前快 中慢 後快 */
+  /* linear 同樣速度 */
+  /* ease-in 前慢 後快 */
+  /* ease-out 前快 後慢 */
+  /* ease-in-out 前慢 中快 後慢 */
+
+  transform: translate(50px, 100px) scale(1.5, 1.5) rotate(45deg)
+    skew(10deg, 10deg);
+  /* translate(50px 100px)  */
+  /* 平移 右移 50px，下移 100px */
+  /* transform: scale(1.5, 1.5); */
+  /* 縮放 x1.5倍 y1.5倍 */
+  /* transform: rotate(45deg); */
+  /* 旋轉 順時針旋轉 45 度  */
+  /* transform: skew(10deg, 10deg); */
+  /* 傾斜 X軸傾斜10度 Y軸傾斜10度 */
+
+  /* 只能寫一次transform: ???； 寫多會被覆蓋，可以寫在同一次裡 */
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 盒子的寬度和高度，包含內距 padding 和邊框 border */
+/* ** 建議每個文件都加上 */
+
+.massage2 {
+  padding: 5px 10px;
+  border: #00ff59 solid 1px;
+  border-radius: 10px;
+  background-color: #09b515;
+  color: #ffffff;
+
+  :inline-block ;
+  /* position: static; */
+  /* 預設 依照html排列 */
+  /* position: absolute; */
+  /* 絕對定位 */
+  /* position: relative; */
+  /* 相對位置 依照原本位置微調 */
+  position: fixed;
+  /* 固定定位 定位在離邊框的...距離 */
+  /* position: sticky */
+  /* 混合 relative 和 fixed */
+  /* 一開始跟著正常流動，滑到某個位置後會固定 */
+  bottom: 50px;
+  /* 距離底部邊框 */
+  right: 50px;
+  /* 距離右側邊框 */
+
+  transition: transform 3s ease;
+}
+
+.massage2.moved {
+  /* bottom: 500px;
+  right: 500px; */
+  opacity: 0.5;
+  /* 透明度 預設是1是完全不透明 0是完全透明 */
+  transition: transform 3s ease;
+  transform: translate(-300px, -300px);
+}

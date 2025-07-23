@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 顯示在不同裝置上的比例 響應式設計 -->
+  <!-- name="viewport"
+   meta 標籤是用來設定「視窗顯示範圍」，主要給行動裝置使用 -->
+  <!-- content="width=device-width 網頁寬度設定為裝置的螢幕寬度  -->
+  <!-- initial-scale=1.0 初始放大比例 1.0 -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" /> -->
+  <!-- 限制最大放大倍率為 2 倍 -->
+  <title>VScode終端機輸入&基本筆記</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- 連結style.css這個css檔案 -->
+</head>
+
+<header>
+  <!-- css 連結 .header 用標籤 -->
+
+  <div class="class1">
+    <!-- class="class1 class2" 同時有class1和class2兩個class -->
+    <a href="https://www.w3schools.com/">w3schools</a>
+    <!-- 重要學習/參考網站 -->
+  </div>
+
+
+  <div id="id2">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="services.html">服務介紹</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+  <img src="./貓2.jpg" width="100%" />
+</header>
+
+<aside>
+  <!-- 側邊欄 -->
+</aside>
+
+<main>
+  <table border="1" style="width: 100%;">
+    <!-- <table></table> 表格 -->
+    <!-- border="1" 邊框粗度1 -->
+    <thead>
+      <!--  <thead> 語意化標籤 沒有實際作用 -->
+      <tr class="red">
+        <th>tr1/th1</th>
+        <th>tr1/th2</th>
+        <th>tr1/th3</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!--  <tbody> 語意化標籤 沒有實際作用 -->
+      <tr class="blue">
+        <th class="blue-text">tr2/th1</th>
+        <th>tr2/th2</th>
+        <th>tr2/th3</th>
+      </tr>
+      <tr class="green green-text">
+        <td>tr3/td1</th>
+        <td>tr3/td2</th>
+        <td>tr3/td3</th>
+      </tr>
+    </tbody>
+    <tfoot>
+      <!--  <tfoot> 語意化標籤 沒有實際作用 -->
+      <tr>
+        <td colspan="3">tr4/td</td>
+        <!-- colspan="3" 合併儲存格 3 -->
+      </tr>
+    </tfoot>
+  </table>
+
+  <form action="">
+    <!-- <form action=""></form>  表單 -->
+
+    <input type="text" placeholder="請輸入文字">
+    <!-- <input type="text"> 文字輸入框 -->
+    <!-- placeholder="請輸入文字" 文字輸入框預設顯示文字 -->
+    <input type="number" placeholder="請輸入數字">
+    <!-- <input type="number"> 數字輸入框 -->
+    <input type="tel" placeholder="請輸入電話">
+    <!-- <input type="tel"> 電話輸入框 -->
+    <input type="email" placeholder="請輸入信箱">
+    <!-- <input type="email"> 信箱輸入框 -->
+    <input type="password" placeholder="請輸入密碼">
+    <!-- <input type="password"> 密碼輸入框 -->
+
+
+    <div>
+      <label><input type="radio" name="handsome" value="yes">是</label>
+      <!-- <input type="radio"> 單選 -->
+      <label><input type="radio" name="handsome" value="no">否</label>
+      <!-- 點文字"是""否"也可以選擇打勾 -->
+    </div>
+
+
+    <div>
+      <label><input type="checkbox" name="options">選項1</label>
+      <!-- <input type="checkbox">  複選 -->
+      <label><input type="checkbox" name="options">選項2</label>
+      <label><input type="checkbox" name="options">選項3</label>
+    </div>
+
+    <div>
+      <textarea name="" id="">預設輸入文字</textarea>
+    </div>
+
+    <div>
+      <select name="" id="">
+        <!-- <select name="" id=""></select>下拉式選單 -->
+        <option value="1">選項1</option>
+        <option value="2">選項2</option>
+        <option value="3">選項3</option>
+        <!-- <option value="name">文字輸入</option>  選項 -->
+      </select>
+    </div>
+
+
+
+    <button class="btn">button</button>
+    <!-- <button></button>按鈕 -->
+
+  </form>
+
+
+
+  <div class="" id="" style="color: black">
+    <!-- 
+            class="標籤/群組"
+            class="class1 class2" 同時有class1和class2兩個class
+            id="tag用專有名字/編碼" 
+        -->
+  </div>
+  <strong>
+    <h3>H3</h3>
+    <ul>
+      <li>li1</li>
+      <li>li2</li>
+    </ul>
+  </strong>
+
+  <h3>H3</h3>
+  <ul>
+    <li>ul/li1</li>
+    <li>ul/li2</li>
+  </ul>
+
+  <span>spen</span>
+
+  <p>p</p>
+
+  <p>
+    <span>p/spen</span>
+  </p>
+
+  <div>
+    <span>div/spen</span>
+
+    <p>div/p</p>
+
+    <p>
+      <span>div/p/spen</span>
+    </p>
+
+    <ul>
+      <li>div/ul/li1</li>
+      <small>
+        <li>small/div/ul/li2</li>
+      </small>
+    </ul>
+  </div>
+</main>
+
+<body>
+  <img src="./貓1.jpg" width="400px" alt="貓1" />
+
+  <br />
+  <!-- <br> 下一行 -->
+
+  <a href="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?_gl=1*1mdycxs*_ga*NjM4MjgyMDk4LjE3NTA5NDM2ODY.*_ga_8JE65Q40S6*czE3NTIxMTU5OTEkbzckZzEkdDE3NTIxMTY0NDIkajYwJGwwJGgw"
+    alt="貓" class="rainbow-linear-gradient">貓的連結</a>
+
+  <div class="massage"> message </div>
+
+  <div class="box1">.box1-1 .box1-1 .box1-1</div>
+  <div class="box1">.box1-2</div>
+  <div class="box1">.box1-3</div>
+
+  <div class="box2">.box2-1</div>
+  <div class="box2">.box2-2</div>
+  <div class="box2">.box2-3</div>
+
+  <div class="massage2" onclick="this.classList.toggle('moved')"> message </div>
+  <!-- onclick="this.classList.toggle('moved')" 是 JavaScript 
+   onclick 點擊  toggle 觸發加入/移除 moved 這個class -->
+
+  <!--    
+    設定 Git 全域使用者名稱（commit 會用這個名字）
+    git config --global user.name "使用者名稱"
+    git config --global user.name "HUA"  
+
+    設定 Git 全域使用者電子郵件（commit 會用這個信箱）
+    git config --global user.email "使用者信箱"
+    git config --global user.email "asia10445@gm.asia.edu.tw"
+
+
+    查看電腦上 Node.js 的版本號
+    node -v
+    範例輸出：
+    v22.17.0
+
+    查看電腦上安裝的 npm（Node Package Manager）版本號
+    npm -v
+    範例輸出：
+    10.9.2
+
+    查看電腦上安裝的 npx 版本號
+    npx -v
+    範例輸出：
+    10.9.2
+
+    在目前的資料夾啟動一個本地網頁伺服器
+    npx http-server .
+    這會把資料夾裡的 HTML、CSS、JS 等靜態檔案變成一個網站
+
+    返回上一層資料夾（目錄）
+    cd ..
+
+    返回上兩層目錄
+    cd ../..
+
+    查看目前所在的資料夾
+    cd .
+
+    顯示目前所在的完整路徑
+    pwd
+
+    進入 Cat-team 資料夾
+    cd Cat-team
+    -->
+</body>
+
+</html>
