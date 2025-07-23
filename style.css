@@ -1,3 +1,8 @@
+p {
+  color: blue;
+  font-size: 24px;
+}
+
 @media only screen and (max-width: 480px) {
   p {
     font-size: 14px;
@@ -6,7 +11,31 @@
 }
 
 /* 響應式設計 css 螢幕小於480px 字體改成 ... */
-/* 寫在 html的 <header></header> 要<style>裡面包css</style>   寫在css不用<style></style> */
+/* 寫在 html的 <head></head> 要<style>裡面包css</style>   寫在css不用<style></style> */
+
+.loader {
+  border: 8px solid #f3f3f3; /* 外圈 */
+  border-top: 8px solid #3498db; /* 上方藍色線條 */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 讀取中 loading 的圖樣效果 */
+/* animation: spin 1s linear infinite; */
+/* spin = 自己取的名字  1s = 一圈動畫的時間是 1 秒  
+   linear = 轉速是線性 平均的  infinite = 重複 */
+/* @keyframes = 逐格動畫 */
 
 .class1 {
   background-color: blue;
