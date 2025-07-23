@@ -17,6 +17,36 @@
 </head>
 
 <header>
+
+<style>
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 14px;
+    color: red;
+  }
+}
+</style>
+
+ <!-- 響應式設計 css 螢幕小於480px 字體改成 ... -->
+ <!-- <style>裡面包css</style> 寫在 html的 <header></header> 可以寫在css不用<style></style>-->
+
+  <!-- 
+  px、em、rem 
+
+  px（像素）
+  絕對單位，就是螢幕上的一個點。固定大小，不會隨字體大小或瀏覽器變化。
+
+  em（相對字體大小）**不建議使用
+  相對於父元素字體大小的單位。
+  例如：父元素字體是16px，子元素設 2em，子元素字體大小就是 32px。
+
+  rem（根字體大小）
+  相對於根元素（html）的字體大小。通常瀏覽器預設是16px。
+  不論元素層級，rem 都是以根字體大小為基準。
+  例如：設定 1.5rem，等於 24px（1.5 × 16px）。 
+  -->
+
+
   <!-- css 連結 .header 用標籤 -->
 
   <div class="class1">

@@ -1,3 +1,13 @@
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 14px;
+    color: red;
+  }
+}
+
+/* 響應式設計 css 螢幕小於480px 字體改成 ... */
+/* 寫在 html的 <header></header> 要<style>裡面包css</style>   寫在css不用<style></style> */
+
 .class1 {
   background-color: blue;
 }
